@@ -9,7 +9,7 @@
 /////////////////////////////////////////////////
 
 template <typename T>
-BinaryTree<T>::BinaryTree(void) {
+BinaryTree<T>::BinaryTree() {
     root = new Node();
 }
 
@@ -34,14 +34,14 @@ BinaryTree<T>::BinaryTree(BinaryTree<T> const& that) {
 template <typename T>
 BinaryTree<T>::~BinaryTree() {
     if (root) {
-        destroy();
+        destroy(root);
     }
     root = nullptr;
 }
 
 
 template <typename T>
-void BinaryTree<T>::insert(T& val) {
+void BinaryTree<T>::insert(T const& val) {
     Node* new_node = new Node(val);
 }
 
@@ -73,8 +73,8 @@ template <typename T>
 BinaryTree<T>::Node::Node() {}
 
 template <typename T>
-BinaryTree<T>::Node::Node(T const& val) {
-    m_val = val;
+BinaryTree<T>::Node::Node(T const& val) : m_val{ val } {
+    
 }
 
 template <typename T>

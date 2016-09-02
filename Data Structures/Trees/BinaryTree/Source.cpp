@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-#include "BinaryTree.h"
+#include "BinaryTree.cpp"
 
 using std::cout;
 using std::endl;
@@ -9,5 +9,6 @@ using std::string;
 
 int main() {
     cout << "Trees" << endl;
-    BinaryTree<uint32_t> tree{ };
+    BinaryTree<int> tree{ 3 };
+    tree.insert(3);
 }
