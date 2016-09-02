@@ -42,7 +42,7 @@ BinaryTree<T>::~BinaryTree() {
 
 template <typename T>
 void BinaryTree<T>::insert(T& val) {
-    Node<T>* new_node = new Node<T>(val);
+    Node* new_node = new Node(val);
 }
 
 template <typename T>
