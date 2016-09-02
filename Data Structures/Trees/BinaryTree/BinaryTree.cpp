@@ -70,7 +70,7 @@ void BinaryTree<T>::destroy(Node* root) {
 /////////////////////////////////////////////////
 
 template <typename T>
-BinaryTree<T>::Node::Node() {}
+BinaryTree<T>::Node::Node() : m_val{} {}
 
 template <typename T>
 BinaryTree<T>::Node::Node(T const& val) : m_val{ val } {

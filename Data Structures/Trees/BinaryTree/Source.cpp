@@ -9,6 +9,6 @@ using std::string;
 
 int main() {
     cout << "Trees" << endl;
-    BinaryTree<int> tree{ 3 };
+    BinaryTree<uint32_t> tree{ };
     tree.insert(3);
 }
